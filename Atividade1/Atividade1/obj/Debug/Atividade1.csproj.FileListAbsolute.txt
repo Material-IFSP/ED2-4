@@ -1,0 +1,7 @@
+C:\Users\renat\source\repos\Atividade1\Atividade1\bin\Debug\Atividade1.exe.config
+C:\Users\renat\source\repos\Atividade1\Atividade1\bin\Debug\Atividade1.exe
+C:\Users\renat\source\repos\Atividade1\Atividade1\bin\Debug\Atividade1.pdb
+C:\Users\renat\source\repos\Atividade1\Atividade1\obj\Debug\Atividade1.csprojAssemblyReference.cache
+C:\Users\renat\source\repos\Atividade1\Atividade1\obj\Debug\Atividade1.csproj.CoreCompileInputs.cache
+C:\Users\renat\source\repos\Atividade1\Atividade1\obj\Debug\Atividade1.exe
+C:\Users\renat\source\repos\Atividade1\Atividade1\obj\Debug\Atividade1.pdb
