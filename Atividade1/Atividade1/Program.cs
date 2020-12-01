@@ -9,16 +9,17 @@ namespace Atividade1
     class Program
     {
         #region funcoes para gerar vendedor e venda    
+        static int IdVendedor = 1;
 
         public static  Vendedor GerarVendedor()
         {
             string NomeVendedor = "";
-            int IdVendedor = 1;
+            
 
             Console.WriteLine("Nome do Vendedor: ");
             NomeVendedor = Console.ReadLine();
             Vendedor vendedor1 = new Vendedor(IdVendedor, NomeVendedor);
-            IdVendedor += 1;
+            IdVendedor++;
             return vendedor1;
         }
 
@@ -57,7 +58,8 @@ namespace Atividade1
             #region variaveis e objetos de classes
             Vendedores vendedores1 = new Vendedores();
             Vendedor vendedor1 = new Vendedor();
-            int opcao, idVendedor, contVendas = 0;
+            int opcao, idvendedor, contVendas = 0;
+
 
             #endregion
 
@@ -65,7 +67,7 @@ namespace Atividade1
             while (true)
             {
                 Console.Clear();
-                Console.WriteLine("Selecione uma Opção:\n");
+                Console.WriteLine("Selecione uma Opção Abaixo :\n");
 
                 Console.WriteLine("----------//----------------------");
                 Console.WriteLine("1 - Cadastrar Vendedor :");
@@ -74,8 +76,11 @@ namespace Atividade1
                 Console.WriteLine("4 - Registrar Venda :");
                 Console.WriteLine("5 - Listar Vendedores :");
                 Console.WriteLine("99 - SAIR :");
-
+                Console.WriteLine("----------//----------------------");
+                Console.Write("Opção: ");
+                
                 opcao = int.Parse(Console.ReadLine());
+                
                 Console.Clear();
 
                 switch(opcao)
@@ -92,12 +97,12 @@ namespace Atividade1
                             Console.WriteLine("Não foi possivel efetuar o cadastro do funcionario! Limite Excedido!");
                         }
                         Console.ReadKey();
-                        break;
+                    break;
                     case 2:
                         Console.Clear();
                          Console.WriteLine("Insira a Indentificação do Vendedor");
-                         idVendedor = int.Parse(Console.ReadLine());
-                         var vendedor = vendedores1.retornarIdVendedor(idVendedor);
+                         idvendedor = int.Parse(Console.ReadLine());
+                         var vendedor = vendedores1.retornarIdVendedor(idvendedor);
                         if (vendedor != null)
                         {
                             Console.Clear();
@@ -124,17 +129,27 @@ namespace Atividade1
                             Console.ReadKey();
                         }
                        
-                        break;
+                    break;
                     case 3:
+                        Console.WriteLine("Insira o Id do vendedor que deseja efetuar a exclusão");
+                        idvendedor = int.Parse(Console.ReadLine());
+                        resultado = vendedores1.delVendedor(idvendedor);
+                        if (resultado == true){
+                            Console.WriteLine("Vendedor Removido com sucesso!");
+                        }
+                        else {
+                            Console.WriteLine("Erro! Vendedor possui vendas! não pode ser removido !");
+                        }
+                        Console.ReadKey();
 
-                        Console.WriteLine("eae gay porque esta tao serio ?");
-                        break;
+
+                    break;
                     case 4:
                         Console.Clear();
                         if(contVendas < 3){
                             Console.WriteLine("Insira o ID do Vendedor: ");
-                            idVendedor = int.Parse(Console.ReadLine());
-                            vendedores1.registarVendas(idVendedor, GerarVenda());
+                            idvendedor = int.Parse(Console.ReadLine());
+                            vendedores1.registarVendas(idvendedor, GerarVenda());
 
                             
                         }
@@ -149,6 +164,22 @@ namespace Atividade1
                         Console.ReadKey();
 
 
+                        break;
+                    case 5:
+                        Console.Clear();
+                        var retornarVendedor = vendedores1.RetornarVendedores();
+                        for (int i = 0; i < retornarVendedor.Length; i++)
+                        {
+                            if (retornarVendedor[i].id > -1)
+                            {
+                                Console.WriteLine("Id: " + retornarVendedor[i].id +
+                                        "\nNome: " + retornarVendedor[i].nome +
+                                        "\nValor Total Vendas: " + retornarVendedor[i].valorVendas() +
+                                        "\nValor Comissão Devida: " + retornarVendedor[i].valorComissao() +
+                                        "\n-----------------------------//---------------------------------");
+                            }
+                        }
+                        Console.ReadKey();
                         break;
                     default:
                         Console.WriteLine("Opção Inválida!");

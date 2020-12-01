@@ -37,7 +37,7 @@ namespace Atividade1
             {
                 osVendedores[i] = new Vendedor(-1, "...");
             }
-        
+
         }
 
         public Vendedores(int _qntd)
@@ -72,9 +72,9 @@ namespace Atividade1
             return false;
         }
 
-        public bool delVendedor(Vendedor v)
+        public bool delVendedor(int id)
         {
-            var IdVendedor = searchVendedor(v);
+            var IdVendedor = retornarIdVendedor(id);
             bool deletar = (qtde > 0);
 
             if (deletar)
@@ -83,11 +83,12 @@ namespace Atividade1
                 {
                     foreach (var item in IdVendedor.AsVendas)
                     {
-                        if (item.dia > 0){ 
+                        if (item.dia > 0)
+                        {
                             return false;
                         }
                         break;
-                    }                           
+                    }
                 }
 
                 for (int i = 0; i < osVendedores.Length; i++)
@@ -100,7 +101,7 @@ namespace Atividade1
                         qtde--;
                         deletar = true;
                     }
-                }                
+                }
             }
             return deletar;
         }
@@ -115,12 +116,12 @@ namespace Atividade1
                 }
             }
             return null;
-         }
+        }
         #endregion
 
         public double valorVendas()
         {
-            return this.osVendedores.Select(osVendedores => osVendedores.valorVendas()).Sum();                        
+            return this.osVendedores.Select(osVendedores => osVendedores.valorVendas()).Sum();
         }
 
         public double valorComissao()
@@ -144,8 +145,8 @@ namespace Atividade1
 
         #region Demais metodos
         public Vendedor retornarIdVendedor(int _id)
-        { 
-        
+        {
+
             foreach (var item in osVendedores)
             {
                 if (item.id == _id)
@@ -155,7 +156,10 @@ namespace Atividade1
             }
             return null;
         }
+        public Vendedor[] RetornarVendedores()
+        {
+            return osVendedores;
+        }
         #endregion
-
     }
 }
