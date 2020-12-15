@@ -1,0 +1,16 @@
+C:\Users\renat\Documents\!DESKTOP FOLDERS\documentos da faculdade\4 semestre\ED2-4\Atividade 2\AgendaConsole\bin\Debug\netcoreapp3.1\AgendaConsole.exe
+C:\Users\renat\Documents\!DESKTOP FOLDERS\documentos da faculdade\4 semestre\ED2-4\Atividade 2\AgendaConsole\bin\Debug\netcoreapp3.1\AgendaConsole.deps.json
+C:\Users\renat\Documents\!DESKTOP FOLDERS\documentos da faculdade\4 semestre\ED2-4\Atividade 2\AgendaConsole\bin\Debug\netcoreapp3.1\AgendaConsole.runtimeconfig.json
+C:\Users\renat\Documents\!DESKTOP FOLDERS\documentos da faculdade\4 semestre\ED2-4\Atividade 2\AgendaConsole\bin\Debug\netcoreapp3.1\AgendaConsole.runtimeconfig.dev.json
+C:\Users\renat\Documents\!DESKTOP FOLDERS\documentos da faculdade\4 semestre\ED2-4\Atividade 2\AgendaConsole\bin\Debug\netcoreapp3.1\AgendaConsole.dll
+C:\Users\renat\Documents\!DESKTOP FOLDERS\documentos da faculdade\4 semestre\ED2-4\Atividade 2\AgendaConsole\bin\Debug\netcoreapp3.1\AgendaConsole.pdb
+C:\Users\renat\Documents\!DESKTOP FOLDERS\documentos da faculdade\4 semestre\ED2-4\Atividade 2\AgendaConsole\bin\Debug\netcoreapp3.1\Agenda.Domain.dll
+C:\Users\renat\Documents\!DESKTOP FOLDERS\documentos da faculdade\4 semestre\ED2-4\Atividade 2\AgendaConsole\bin\Debug\netcoreapp3.1\Agenda.Domain.pdb
+C:\Users\renat\Documents\!DESKTOP FOLDERS\documentos da faculdade\4 semestre\ED2-4\Atividade 2\AgendaConsole\obj\Debug\netcoreapp3.1\AgendaConsole.csprojAssemblyReference.cache
+C:\Users\renat\Documents\!DESKTOP FOLDERS\documentos da faculdade\4 semestre\ED2-4\Atividade 2\AgendaConsole\obj\Debug\netcoreapp3.1\AgendaConsole.AssemblyInfoInputs.cache
+C:\Users\renat\Documents\!DESKTOP FOLDERS\documentos da faculdade\4 semestre\ED2-4\Atividade 2\AgendaConsole\obj\Debug\netcoreapp3.1\AgendaConsole.AssemblyInfo.cs
+C:\Users\renat\Documents\!DESKTOP FOLDERS\documentos da faculdade\4 semestre\ED2-4\Atividade 2\AgendaConsole\obj\Debug\netcoreapp3.1\AgendaConsole.csproj.CoreCompileInputs.cache
+C:\Users\renat\Documents\!DESKTOP FOLDERS\documentos da faculdade\4 semestre\ED2-4\Atividade 2\AgendaConsole\obj\Debug\netcoreapp3.1\AgendaConsole.csproj.CopyComplete
+C:\Users\renat\Documents\!DESKTOP FOLDERS\documentos da faculdade\4 semestre\ED2-4\Atividade 2\AgendaConsole\obj\Debug\netcoreapp3.1\AgendaConsole.dll
+C:\Users\renat\Documents\!DESKTOP FOLDERS\documentos da faculdade\4 semestre\ED2-4\Atividade 2\AgendaConsole\obj\Debug\netcoreapp3.1\AgendaConsole.pdb
+C:\Users\renat\Documents\!DESKTOP FOLDERS\documentos da faculdade\4 semestre\ED2-4\Atividade 2\AgendaConsole\obj\Debug\netcoreapp3.1\AgendaConsole.genruntimeconfig.cache
